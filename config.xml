@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns=" http://www.w3.org/ns/widgets"
+            xmlns:rim="http://www.blackberry.com/ns/widgets" 
+            version="1.0.0.1">
+      <name>dBoom</name>
+      <content src="http://www.dacheng.me/dBoom/index.html"/>
+	  <icon src="img/icon_temp.png" />
+</widget>

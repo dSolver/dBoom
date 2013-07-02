@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>dBoom!</title>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/dBoom.css" />
+		
+		<script type="text/javascript" src="js/dBoom.js"></script>
+		<script type="text/javascript" src="js/dBoom_map.js"></script>
+		<script type="text/javascript" src="js/dBoom_goon.js"></script>
+		<meta name="viewport" id="viewport" content="initial-scale=1.0,user-scalable=no" />
+	</head> 
+	<body class="dBody dBGGray"> 
+		<div style="width: 1024px; height: 600px;" id="mainDiv">
+			<canvas id="dCanvas" width="1024" height="600" class="dBGWhite" >
+				Canvas unsupported
+			</canvas>
+			<div id="dTopBorder" style="width: 1024px; height: 30px; background-color: #f00; background: url(img/border_top.png); background-repeat:repeat-x; position: fixed; top: 0; left: 0; float: left; display: none;"></div>
+			<div id="dLeftBorder" style="width:30px; height: 600px; background: url(img/border_left.png); background-repeat:repeat-y; position: fixed; top: 0px; left: 0; float: left; display: none;"></div>
+			<div id="dRightBorder" style="width: 30px; height: 600px; background: url(img/border_right.png); background-repeat:repeat-y; position: fixed; top: 0; left: 994px; float: left; display: none;"></div>
+			<div id="dBotBorder" style="width: 1024px; height: 30px; background: url(img/border_bot.png); background-repeat:repeat-x; position: fixed; top: 570px; left: 0px; float: left; display: none;"></div>
+			<div id="dPoints" style="width: 200px; height: 50px; position: fixed; top: 40px; left: 40px; float: left; opacity: 0.7; font-family: Verdana; font-size: 25px;"></div>
+			<div id="dTime" style="width: 200px; height: 50px; position: fixed; top: 40px; left: 480px; float: left; opacity: 0.7"></div>
+			
+			<div id="dMenu" class="gameMenu">
+				<div class="dCenter">
+					<a href="javascript:void(0)" id="NewGame">Free Play</a>
+				</div>
+				<div class="dCenter">
+					<a href="javascript:void(0)" id="TimedGame">Timed Game</a>
+				</div>
+				<div class="dCenter">
+					<a href="javascript:void(0)" id="PickLevel">Pick Level</a>
+				</div>
+			</div>
+			<div id="dGameEndMenu" class="gameMenu hide">
+				<div class="dCenter">
+					<a href="javascript:void(0)" id="Restart">Restart</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing DeviceMotion</title>
+</head>
+<body>
+<div id="axvalues"></div>
+<div id="ayvalues"></div>
+<div id="azvalues"></div>
+<div id="invalues"></div>
+<script type="text/javascript">
+
+window.addEventListener("devicemotion", function(event) {
+
+		var ax = event.accelerationIncludingGravity.x;
+		var ay = event.accelerationIncludingGravity.y;
+		var az = event.accelerationIncludingGravity.z;
+		var interval = event.interval;
+
+		document.getElementById('axvalues').innerHTML = ax;
+		document.getElementById('ayvalues').innerHTML = ay;
+		document.getElementById('azvalues').innerHTML = az;
+		document.getElementById('invalues').innerHTML = interval;
+
+}, true);
+window.addEventListener('touchmove', function(event){
+	event.preventDefault();
+	event.stopPropagation(); 
+	console.log("grrr");
+	//window.scroll(0, 0);
+	return false;
+}, false);
+</script>
+
+</body>
